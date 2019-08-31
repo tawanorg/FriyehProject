@@ -24,13 +24,13 @@ class LoginFlow extends React.Component {
 	}
 
 	handleContinue() {
-		return;
+		this.props.navigation.navigate('App');
 	}
 
 	render() {
 		return (
 			<SafeAreaView style={[styles.container, inlineStyles.container]}>
-				<StatusBar barStyle="light-content" />
+				{/* <StatusBar barStyle="light-content" /> */}
 				<View style={inlineStyles.body}>
 					<Image
 						source={require('images/logo-white.png')}

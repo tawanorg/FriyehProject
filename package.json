@@ -8,6 +8,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "dummyjs": "^1.1.7",
     "hoist-non-react-statics": "^3.3.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
