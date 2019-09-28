@@ -4,9 +4,9 @@ import HomePage from 'containers/HomePage';
 import PostPage from 'containers/PostPage';
 import ProfilePage from 'containers/ProfilePage';
 
-import IconHome from 'images/icons/home.svg';
-import IconUser from 'images/icons/user.svg';
-import IconPlus from 'images/icons/plus.svg';
+import IconHome from 'assets/icons/home.svg';
+import IconUser from 'assets/icons/user.svg';
+import IconPlus from 'assets/icons/plus.svg';
 
 const HomeStack = createStackNavigator({
 	Home: HomePage,

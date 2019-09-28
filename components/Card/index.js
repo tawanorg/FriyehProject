@@ -11,7 +11,7 @@ function Card({photoUrl, width, height, style}) {
 	return (
 		<TouchableOpacity style={[inlineStyles.container, style]}>
 			<View style={inlineStyles.off}>
-				<StyledText.Small style={{color: '#FFFFFF'}}>50% off</StyledText.Small>
+				<StyledText.Small style={{fontSize: 12, color: '#FFFFFF'}}>50% off</StyledText.Small>
 			</View>
 			<Image
 				style={[inlineStyles.cover, {height, width}]}
@@ -19,7 +19,7 @@ function Card({photoUrl, width, height, style}) {
 				resizeMode="cover"
 			/>
 			<View style={inlineStyles.title}>
-				<Avatar size={24} />
+				<Avatar size={22} />
 				<StyledText style={{color: '#FFFFFF', marginLeft: 8}}>{Dummy.text(1)}</StyledText>
 				{/* <View style={[styles.flexColumn, {marginLeft: 8}]}>
 					<StyledText.Small
@@ -81,7 +81,7 @@ const inlineStyles = StyleSheet.create({
 		zIndex: 200,
 		backgroundColor: 'red',
 		paddingHorizontal: 5,
-		paddingVertical: 2,
+		paddingVertical: 1,
 		borderBottomLeftRadius: 4,
 		// borderTopRightRadius: 4,
 	},

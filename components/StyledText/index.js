@@ -18,7 +18,7 @@ StyledText.Display = ({style, ...props}) => (
 );
 
 const baseFontStyle = {
-	fontSize: 16,
+	fontSize: 14,
 	lineHeight: 24,
 	color: '#666666',
 };

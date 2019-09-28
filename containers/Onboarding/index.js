@@ -69,7 +69,7 @@ class Onboarding extends React.Component {
 			<SafeAreaView style={styles.container}>
 				<View style={inlineStyles.body}>
 					<Image
-						source={require('images/logo.png')}
+						source={require('assets/logo.png')}
 						resizeMode="contain"
 						style={inlineStyles.logo}
 					/>

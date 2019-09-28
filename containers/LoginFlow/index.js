@@ -33,7 +33,7 @@ class LoginFlow extends React.Component {
 				{/* <StatusBar barStyle="light-content" /> */}
 				<View style={inlineStyles.body}>
 					<Image
-						source={require('images/logo-white.png')}
+						source={require('assets/logo-white.png')}
 						resizeMode="contain"
 						style={inlineStyles.logo}
 					/>

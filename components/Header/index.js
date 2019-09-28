@@ -2,18 +2,27 @@ import React from 'react';
 import {TouchableOpacity, StyleSheet, View, Image} from 'react-native';
 import {withNavigation} from 'react-navigation';
 import styles from 'styles';
-import IconNotification from 'images/icons/notification.svg';
-import IconSearch from 'images/icons/search.svg';
+import IconNotification from 'assets/icons/notification.svg';
+import IconSearch from 'assets/icons/search.svg';
+import Logo from 'assets/logo.svg';
 import headerHeight from 'utils/headerHeight';
 
-const Header = ({style, kind, children, navigation}) => (
+/* <Logo fill="#000000" width={111} height={50} style={inlineStyles.logo} /> */
+const Header = ({style, navigation}) => (
 	<View style={inlineStyles.container}>
 		<View style={inlineStyles.wrapper}>
 			<Image
-				source={require('images/logo.png')}
+				source={require('assets/logo.png')}
+				style={[
+					inlineStyles.logo,
+					{
+						width: 100,
+						height: 40,
+					},
+				]}
 				resizeMode="contain"
-				style={inlineStyles.logo}
 			/>
+			<View />
 			<View style={[styles.flexRow, styles.flexCenter]}>
 				<TouchableOpacity style={[inlineStyles.menuItem, {marginRight: 10}]}>
 					<IconSearch width={20} height={20} fill="#333" />
@@ -42,8 +51,9 @@ const inlineStyles = StyleSheet.create({
 		paddingTop: headerHeight,
 	},
 	logo: {
-		width: 90,
-		height: 40,
+		position: 'absolute',
+		left: -5,
+		top: headerHeight,
 	},
 	menuItem: {
 		...styles.flexCenter,

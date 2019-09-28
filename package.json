@@ -11,10 +11,9 @@
     "dummyjs": "^1.1.7",
     "hoist-non-react-statics": "^3.3.0",
     "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react-native": "^0.60.5",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-linear-gradient": "^2.5.6",
-    "react-native-maps": "^0.25.0",
     "react-native-reanimated": "^1.2.0",
     "react-native-svg": "^9.7.1",
     "react-navigation": "^3.12.1"

@@ -34,7 +34,9 @@ target 'FriyehProject' do
   pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
-
+   
+	pod 'Google-Mobile-Ads-SDK'
+ 
   target 'FriyehProjectTests' do
     inherit! :search_paths
     # Pods for testing

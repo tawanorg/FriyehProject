@@ -1,7 +1,1 @@
-export default [
-	'รายการแนะนำ',
-	'เครื่องสำอาง',
-	'ของเล่นเด็ก',
-	'เสื้อผ้า',
-	'เครื่องใช้ไฟฟ้า',
-];
+export default ['For you', 'Personal Care', 'Food', 'Fashion', 'Toy', 'House'];

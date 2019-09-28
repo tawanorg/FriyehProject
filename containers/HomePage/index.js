@@ -6,6 +6,9 @@ import {
 	FlatList,
 	Dimensions,
 } from 'react-native';
+// import { 
+//   AdMobBanner, 
+// } from 'react-native-admob';
 
 import Card from 'components/Card';
 import Header from 'components/Header';
@@ -26,9 +29,18 @@ class HomePage extends React.Component {
 				<View style={inlineStyles.filterBox}>
 					<Filter />
 				</View>
+				{/* <AdMobBanner
+					bannerSize="fullBanner"
+					adUnitID="ca-app-pub-9766384390139826/3609445515"
+					testDeviceID="EMULATOR"
+					didFailToReceiveAdWithError={error => console.log('bannerError', error)}
+				/> */}
 				<FlatList
 					numColumns={2}
 					data={MOCK_LISTING}
+					style={{
+						backgroundColor: '#FAFAFA',
+					}}
 					renderItem={({index, item}) => (
 						<Card
 							key={index + Math.random()}
